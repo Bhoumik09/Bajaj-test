@@ -16,7 +16,7 @@ const handleBfhlRequest = (req, res) => {
     const email = "bhoumikchopra2022@vitbhopal.ac.in"
     const response = {
       is_success: true,
-      user_id:`${name}+${getDdmmyyyyFromTimestamp()}`,
+      user_id:`${name}-${getDdmmyyyyFromTimestamp()}`,
       email,
       roll_number: '22BCE10108',
       odd_numbers: oddNumbers,
