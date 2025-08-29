@@ -12,11 +12,12 @@ const handleBfhlRequest = (req, res) => {
     }
 
     const { oddNumbers, evenNumbers, alphabets, specialCharacters, sum, concatString } = processData(data);
-    const name = "Bhoumik Chopra";
+    const firstname = "bhoumik";
+    const last_name="chopra";
     const email = "bhoumikchopra2022@vitbhopal.ac.in"
     const response = {
       is_success: true,
-      user_id:`${name}-${getDdmmyyyyFromTimestamp()}`,
+      user_id:`${firstname}_${last_name}_${getDdmmyyyyFromTimestamp()}`,
       email,
       roll_number: '22BCE10108',
       odd_numbers: oddNumbers,
